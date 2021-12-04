@@ -36,3 +36,24 @@ def square(x):
 new = map(square,number)
 # new = map(str,number)
 print(list(new))
+
+
+import math
+
+
+def area(r):
+    return math.pi * (r**2)
+
+redii = [2, 4, 3, 6]
+areas = []
+
+# for r in redii:
+#     a = area(r)
+#     areas.append(a)
+# print(areas)
+
+print(list(map(area, redii)))
+
+
+
+
