@@ -65,8 +65,8 @@ print(list(map(str,a)))
 
 print('-------------------ternary operator----------------------------')
 
-age = 24
-size = 32
+age = 20
+size = 34
 
 # if age > 18:
 #     print('you are an adult')
@@ -77,7 +77,7 @@ size = 32
 print('you are an adult' if age > 18 else 'you are not an adult')
 
 # print('you are a sexy girl' if size == 32 and age == 24 else 'you a not sexy')
-print('you are a sexy girl' if size == 32 and (age <= 24 or age >= 18) else 'you are old age' if age >= 24 else 'you are not sexy you size is too large' if size > 32 else 'you are fit')
+print('you are a sexy girl' if size == 32 and 18 <= age < 24 else 'you are not sexy you size is too large and also you are old' if size > 32 and age > 24 else 'you are child dont run this code' if age < 18 else 'dont run')
 
 
 
