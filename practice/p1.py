@@ -79,14 +79,38 @@ print('you are an adult' if age > 18 else 'you are not an adult')
 # print('you are a sexy girl' if size == 32 and age == 24 else 'you a not sexy')
 print('you are a sexy girl' if size == 32 and 18 <= age < 24 else 'you are not sexy you size is too large and also you are old' if size > 32 and age > 24 else 'you are child dont run this code' if age < 18 else 'dont run')
 
+print('------------lambda-------------------')
+
+a = lambda i, j: i * j
+print(a(5, 9))
 
 
+print((lambda x: x*x)(5))
 
+print((lambda x, y: x + y)(10, 40))
+print(5 + 4)
 
+print(8*8)
 
+a = [1,2,3,4,5,6,7,8,9,10]
+print(list(filter(lambda x: x%2 == 0, a)))
+print(list(map(lambda x: x*2, a)))
 
+print('------------------enumerations---------------')
 
+a = ['ashu','jilu','bulu','silu','lilu']
 
+b = 1
+for i in a:
+    print(f'{b}:{i}')
+    b += 1
 
+for i,j in enumerate(a):
+    print(f'{i}:{j}')
 
+print(list(enumerate(a)))
+
+print(a[::-1])
+a.reverse()
+print(a)
 
