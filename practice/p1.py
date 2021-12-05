@@ -113,4 +113,42 @@ print(list(enumerate(a)))
 print(a[::-1])
 a.reverse()
 print(a)
+print('------------------JOIN-----------------')
+
+
+x = ['hey','ashutosh','you','have','to collect']
+y = ''
+for i in x:
+    y += i + ' '
+print(y)
+v = '<blank>'.join(x)
+print(v)
+print('--------------Doc string--------------------')
+
+
+def fun(x, y):
+    '''
+
+    :param x:
+    :param y:
+    :return:
+    '''
+    return x * y
+
+
+print(fun.__doc__)
+print('-------------ZIP----------------')
+
+a = ['ashu','jilu','bulu','silu','lilu']
+b = [1,2,3,4,5]
+for i,j in zip(a,b):
+    print(f'name {i}, age {j}')
+
+d = [('ashu',24),('jilu',22),('silu',12),('lilu',21)]
+i,j = zip(*d)
+print(list(i))
+print(list(j))
+print(list(zip(a,b)))
+
+print(dict(zip(a,b)))
 
